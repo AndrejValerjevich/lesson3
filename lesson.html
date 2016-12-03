@@ -12,7 +12,7 @@
       <div class="display-flex">Меня нужно сделать display: flex</div>
       <style>
         .display-flex {
-
+display: flex;
         }
       </style>
     </section>
@@ -26,7 +26,7 @@
       </div>
       <style>
         .flex-direction-left {
-
+flex-direction: row;
         }
       </style>
     </section>
@@ -39,7 +39,7 @@
       </div>
       <style>
         .flex-direction-right {
-
+flex-direction: row-reverse;
         }
       </style>
     </section>
@@ -52,7 +52,7 @@
       </div>
       <style>
         .flex-direction {
-
+flex-direction: column;
         }
       </style>
     </section>
@@ -68,19 +68,19 @@
       </div>
       <style>
         .cat1 {
-
+order: 1;
         }
 
         .cat2 {
-
+order: 2;
         }
 
         .dog1 {
-
+order: 3;
         }
 
         .dog2 {
-
+order: 4;
         }
       </style>
     </section>
@@ -112,7 +112,7 @@
       </div>
       <style>
         .cats-dogs-wrap {
-
+flex-wrap: wrap;
         }
       </style>
     </section>
@@ -125,7 +125,7 @@
       </div>
       <style>
         .cat-centered {
-
+justify-content: center;
         }
       </style>
     </section>
@@ -138,7 +138,7 @@
       </div>
       <style>
         .cat-centered-v {
-
+align-items: center;
         }
       </style>
     </section>
@@ -150,7 +150,8 @@
       </div>
       <style>
         .cat-centered-v-h {
-
+justify-content: center;
+align-items: center;
         }
       </style>
     </section>
@@ -159,11 +160,78 @@
       <h3>Сделайте верстку таблицы с 3 колонками и 10 строчками</h3>
       <p>Используйте inline-стили</p>
       <div class="table">
+<div class="table-row">
+      <div class="table-cell">11</div>
+      <div class="table-cell-mid">12</div>
+      <div class="table-cell">13</div>
+</div>
+<div class="table-row">
+      <div class="table-cell">21</div>
+      <div class="table-cell-mid">22</div>
+      <div class="table-cell">23</div>
+</div>
+<div class="table-row">
+      <div class="table-cell">31</div>
+      <div class="table-cell-mid">32</div>
+      <div class="table-cell">33</div>
+</div>
+<div class="table-row">
+      <div class="table-cell">31</div>
+      <div class="table-cell-mid">32</div>
+      <div class="table-cell">33</div>
+</div>
+<div class="table-row">
+      <div class="table-cell">31</div>
+      <div class="table-cell-mid">32</div>
+      <div class="table-cell">33</div>
+</div>
+<div class="table-row">
+      <div class="table-cell">31</div>
+      <div class="table-cell-mid">32</div>
+      <div class="table-cell">33</div>
+</div>
+<div class="table-row">
+      <div class="table-cell">31</div>
+      <div class="table-cell-mid">32</div>
+      <div class="table-cell">33</div>
+</div>
+<div class="table-row">
+      <div class="table-cell">31</div>
+      <div class="table-cell-mid">32</div>
+      <div class="table-cell">33</div>
+</div>
+<div class="table-row">
+      <div class="table-cell">31</div>
+      <div class="table-cell-mid">32</div>
+      <div class="table-cell">33</div>
+</div>
+<div class="table-row">
+      <div class="table-cell">31</div>
+      <div class="table-cell-mid">32</div>
+      <div class="table-cell">33</div>
+</div>
 
       </div>
       <style>
         .table {
-
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+        }
+        .table-row {
+          display: flex;
+flex-direction: row;
+        }
+        
+        .table-cell {
+          display: flex;
+          flex-grow: 1;
+          background-color: SandyBrown;
+        }
+        .table-cell-mid {
+          display: flex;
+          flex-grow: 2 ;
+          background-color: Burlywood;
         }
       </style>
     </section>
